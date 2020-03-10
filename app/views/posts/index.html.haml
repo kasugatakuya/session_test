@@ -1,0 +1,6 @@
+
+- if user_signed_in?
+  = link_to  "#{current_user.nickname}", edit_user_path(current_user)
+- else
+  = link_to  "新規登録", step1_signup_index_path
+  = link_to  "ログイン", new_user_session_path

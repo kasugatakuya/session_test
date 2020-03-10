@@ -1,0 +1,12 @@
+= form_for @user, url: step4_signup_index_path, method: :get, html: {class: 'second-wrapper__box'} do |f|
+  = f.text_field :address_last_name, placeholder: '春日'
+  = f.text_field :address_first_name, placeholder: '拓也'
+  = f.text_field :address_last_name_kana, placeholder: 'カスガ'
+  = f.text_field :address_first_name_kana, placeholder: 'タクヤ'
+  = f.text_field :address_number, placeholder: '155-0031'
+  = f.text_field :address_prefecture, placeholder: '東京都', default: 0
+  = f.text_field :address_name, placeholder: '世田谷区'
+  = f.text_field :address_block, placeholder: '北沢'
+  = f.text_field :address_building, placeholder: 'グリンハイツ'
+  = f.text_field :address_phone_number, placeholder: '08051429989'
+  = f.submit '投稿する', class: 'toko'
